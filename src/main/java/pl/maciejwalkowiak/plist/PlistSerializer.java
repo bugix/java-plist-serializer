@@ -30,8 +30,8 @@ package pl.maciejwalkowiak.plist;
  * @author Maciej Walkowiak
  */
 public interface PlistSerializer {
-	static final String HEADER = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"><plist version=\"1.0\">";
-	static final String FOOTER = "</plist>";
+	String HEADER = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"><plist version=\"1.0\">";
+	String FOOTER = "</plist>";
 
 	/**
 	 * Serializes object to plist and creates valid XML by wrapping it around XML header,

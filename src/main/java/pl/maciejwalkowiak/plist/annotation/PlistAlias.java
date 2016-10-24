@@ -33,6 +33,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
 public @interface PlistAlias {
-	public String value();
-	public boolean followStrategy() default false;
+	String value();
+	boolean followStrategy() default false;
 }
